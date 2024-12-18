@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 관리 - 의류 쇼핑몰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">의류 쇼핑몰 관리자</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">대시보드</a></li>
+        <li><a href="product-management.html" class="active">상품 관리</a></li>
+        <li><a href="orders.html">주문 관리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-management">
+      <h1>상품 관리</h1>
+
+      <!-- 상품 등록 폼 -->
+      <div class="product-form">
+        <h2>상품 등록</h2>
+        <form id="product-form">
+          <label for="product-name">상품명:</label>
+          <input type="text" id="product-name" name="product-name" required>
+
+          <label for="product-price">가격:</label>
+          <input type="number" id="product-price" name="product-price" required>
+
+          <label for="product-size">사이즈:</label>
+          <select id="product-size" name="product-size" multiple>
+            <option value="2XL">2XL</option>
+            <option value="3XL">3XL</option>
+            <option value="4XL">4XL</option>
+          </select>
+
+          <label for="product-stock">재고:</label>
+          <input type="number" id="product-stock" name="product-stock" required>
+
+          <label for="product-image">이미지:</label>
+          <input type="file" id="product-image" name="product-image" accept="image/*">
+
+          <button type="submit" class="submit-button">등록</button>
+        </form>
+      </div>
+
+      <!-- 상품 목록 -->
+      <div class="product-list">
+        <h2>등록된 상품 목록</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>상품명</th>
+              <th>가격</th>
+              <th>사이즈</th>
+              <th>재고</th>
+              <th>수정</th>
+              <th>삭제</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>상품명 1</td>
+              <td>₩30,000</td>
+              <td>2XL, 3XL</td>
+              <td>50</td>
+              <td><button class="edit-button">수정</button></td>
+              <td><button class="delete-button">삭제</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>상품명 2</td>
+              <td>₩40,000</td>
+              <td>3XL, 4XL</td>
+              <td>30</td>
+              <td><button class="edit-button">수정</button></td>
+              <td><button class="delete-button">삭제</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 의류 쇼핑몰. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

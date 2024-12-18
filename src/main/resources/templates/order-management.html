@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문 관리 - 의류 쇼핑몰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">의류 쇼핑몰 관리자</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">대시보드</a></li>
+        <li><a href="product-management.html">상품 관리</a></li>
+        <li><a href="inventory-management.html">재고 관리</a></li>
+        <li><a href="order-management.html" class="active">주문 관리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order-management">
+      <h1>주문 관리</h1>
+
+      <!-- 주문 목록 -->
+      <div class="order-list">
+        <h2>주문 목록</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>주문 ID</th>
+              <th>주문자</th>
+              <th>상품명</th>
+              <th>주문 총액</th>
+              <th>상태</th>
+              <th>상태 변경</th>
+              <th>상세 보기</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>001</td>
+              <td>홍길동</td>
+              <td>상품명 1, 상품명 2</td>
+              <td>₩110,000</td>
+              <td>입금 대기</td>
+              <td>
+                <select>
+                  <option value="입금 대기">입금 대기</option>
+                  <option value="입금 완료">입금 완료</option>
+                  <option value="배송 준비 중">배송 준비 중</option>
+                  <option value="배송 중">배송 중</option>
+                  <option value="배송 완료">배송 완료</option>
+                </select>
+                <button class="update-status">변경</button>
+              </td>
+              <td><button class="view-details">보기</button></td>
+            </tr>
+            <tr>
+              <td>002</td>
+              <td>김영희</td>
+              <td>상품명 3</td>
+              <td>₩50,000</td>
+              <td>배송 준비 중</td>
+              <td>
+                <select>
+                  <option value="입금 대기">입금 대기</option>
+                  <option value="입금 완료">입금 완료</option>
+                  <option value="배송 준비 중" selected>배송 준비 중</option>
+                  <option value="배송 중">배송 중</option>
+                  <option value="배송 완료">배송 완료</option>
+                </select>
+                <button class="update-status">변경</button>
+              </td>
+              <td><button class="view-details">보기</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 의류 쇼핑몰. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

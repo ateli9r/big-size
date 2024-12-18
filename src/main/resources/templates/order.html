@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주문하기 - 의류 쇼핑몰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">의류 쇼핑몰</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="products.html">상품</a></li>
+        <li><a href="cart.html">장바구니</a></li>
+        <li><a href="orders.html" class="active">주문</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="order">
+      <h1>주문하기</h1>
+
+      <!-- 주문 요약 -->
+      <div class="order-summary">
+        <h2>주문 상품</h2>
+        <ul>
+          <li>상품명 1 (2XL) x 1개 - ₩30,000</li>
+          <li>상품명 2 (3XL) x 2개 - ₩80,000</li>
+        </ul>
+        <p class="total-price">총 금액: ₩110,000</p>
+      </div>
+
+      <!-- 배송 정보 -->
+      <div class="shipping-info">
+        <h2>배송 정보</h2>
+        <form id="shipping-form">
+          <label for="name">이름:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="address">주소:</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="phone">전화번호:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="email">이메일:</label>
+          <input type="email" id="email" name="email" required>
+        </form>
+      </div>
+
+      <!-- 결제 정보 -->
+      <div class="payment-info">
+        <h2>결제 정보</h2>
+        <p>입금자명: <strong>홍길동</strong></p>
+        <p>계좌번호: <strong>123-456-7890 (은행명)</strong></p>
+      </div>
+
+      <!-- 주문 버튼 -->
+      <div class="order-actions">
+        <button type="submit" form="shipping-form" class="order-button">주문 완료</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 의류 쇼핑몰. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

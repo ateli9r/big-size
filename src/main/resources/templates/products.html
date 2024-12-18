@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 목록 - 의류 쇼핑몰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">의류 쇼핑몰</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="products.html" class="active">상품</a></li>
+        <li><a href="cart.html">장바구니</a></li>
+        <li><a href="orders.html">주문</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list-header">
+      <h1>상품 목록</h1>
+      <form class="filters">
+        <label for="size-filter">사이즈:</label>
+        <select id="size-filter" name="size">
+          <option value="all">전체</option>
+          <option value="2XL">2XL</option>
+          <option value="3XL">3XL</option>
+          <option value="4XL">4XL</option>
+        </select>
+
+        <label for="sort">정렬:</label>
+        <select id="sort" name="sort">
+          <option value="popular">인기순</option>
+          <option value="new">최신순</option>
+          <option value="price-asc">가격 낮은순</option>
+          <option value="price-desc">가격 높은순</option>
+        </select>
+        <button type="submit" class="filter-button">적용</button>
+      </form>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="상품 이미지">
+        <h3>상품명 1</h3>
+        <p>₩30,000</p>
+        <button class="add-to-cart-button">장바구니에 담기</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="상품 이미지">
+        <h3>상품명 2</h3>
+        <p>₩40,000</p>
+        <button class="add-to-cart-button">장바구니에 담기</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/150" alt="상품 이미지">
+        <h3>상품명 3</h3>
+        <p>₩50,000</p>
+        <button class="add-to-cart-button">장바구니에 담기</button>
+      </div>
+      <!-- 추가 상품 카드 -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 의류 쇼핑몰. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

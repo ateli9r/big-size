@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>재고 관리 - 의류 쇼핑몰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">의류 쇼핑몰 관리자</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="dashboard.html">대시보드</a></li>
+        <li><a href="product-management.html">상품 관리</a></li>
+        <li><a href="inventory-management.html" class="active">재고 관리</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="inventory-management">
+      <h1>재고 관리</h1>
+
+      <!-- 재고 목록 -->
+      <div class="inventory-list">
+        <h2>상품별 재고</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>상품명</th>
+              <th>사이즈</th>
+              <th>현재 재고</th>
+              <th>재고 추가</th>
+              <th>재고 감소</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>상품명 1</td>
+              <td>2XL</td>
+              <td>50</td>
+              <td>
+                <input type="number" min="1" placeholder="수량">
+                <button class="add-stock">추가</button>
+              </td>
+              <td>
+                <input type="number" min="1" placeholder="수량">
+                <button class="remove-stock">감소</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>상품명 2</td>
+              <td>3XL</td>
+              <td>30</td>
+              <td>
+                <input type="number" min="1" placeholder="수량">
+                <button class="add-stock">추가</button>
+              </td>
+              <td>
+                <input type="number" min="1" placeholder="수량">
+                <button class="remove-stock">감소</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 의류 쇼핑몰. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

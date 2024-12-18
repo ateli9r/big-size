@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 상세 - 의류 쇼핑몰</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">의류 쇼핑몰</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">홈</a></li>
+        <li><a href="products.html">상품</a></li>
+        <li><a href="cart.html">장바구니</a></li>
+        <li><a href="orders.html">주문</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-detail">
+      <div class="product-image">
+        <img src="https://via.placeholder.com/400" alt="상품 이미지">
+      </div>
+      <div class="product-info">
+        <h1>상품명 예시</h1>
+        <p class="price">₩40,000</p>
+        <p class="description">
+          이 상품은 편안하고 스타일리시한 2XL, 3XL, 4XL 사이즈의 의류입니다.
+          최고의 품질로 제작되었으며 다양한 스타일에 잘 어울립니다.
+        </p>
+        <form class="purchase-form">
+          <label for="size">사이즈 선택:</label>
+          <select id="size" name="size">
+            <option value="2XL">2XL</option>
+            <option value="3XL">3XL</option>
+            <option value="4XL">4XL</option>
+          </select>
+
+          <label for="quantity">수량:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+          <button type="submit" class="add-to-cart-button">장바구니에 담기</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 의류 쇼핑몰. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
